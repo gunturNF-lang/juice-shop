@@ -1,0 +1,42 @@
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Library marsdb tidak memiliki versi perbaikan menurut halaman Snyk. Di aplikasi, library ini hanya diimpor oleh data/mongodb.ts.'
+        expires: 2027-01-31T00:00:00.000Z
+  SNYK-JS-DECOMPRESS-20254116:
+    - '*':
+        reason: 'Tidak ada versi perbaikan untuk decompress. Paket ini dibawa oleh download@8.0.0, sedangkan download dipanggil tanpa opsi extract pada lib/utils.ts.'
+        expires: 2027-01-31T00:00:00.000Z
+  SNYK-JS-DECOMPRESS-17874437:
+    - '*':
+        reason: 'Paket decompress dibawa oleh download@8.0.0 yang dipanggil tanpa opsi extract pada lib/utils.ts.'
+        expires: 2027-01-31T00:00:00.000Z
+  SNYK-JS-DECOMPRESS-17937347:
+    - '*':
+        reason: 'Paket decompress dibawa oleh download@8.0.0 yang dipanggil tanpa opsi extract pada lib/utils.ts.'
+        expires: 2027-01-31T00:00:00.000Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964068:
+    - '*':
+        reason: 'Halaman Snyk menyatakan tidak ada versi perbaikan. Versi 3.8.1 terikat pada got@8.3.2 di bawah download@8.0.0.'
+        expires: 2027-01-31T00:00:00.000Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964064:
+    - '*':
+        reason: 'Versi 3.8.1 terikat pada got@8.3.2 di bawah download@8.0.0 dan belum ada upgrade yang kompatibel.'
+        expires: 2027-01-31T00:00:00.000Z
+  'npm:jsonwebtoken:20150331':
+    - '*':
+        reason: 'Versi jsonwebtoken 0.4.0 ditetapkan di package.json dan dipakai pada kode aplikasi. Upgrade mengubah cara verifikasi token sehingga perlu pengujian di luar lingkup tugas ini.'
+        expires: 2027-01-31T00:00:00.000Z
+  'npm:jws:20160726':
+    - '*':
+        reason: 'Temuan ini berasal dari jws@0.2.6 yang menjadi dependensi transitif jsonwebtoken@0.4.0.'
+        expires: 2027-01-31T00:00:00.000Z
+  SNYK-JS-JWS-14188253:
+    - '*':
+        reason: 'Temuan ini berasal dari jws@0.2.6 yang menjadi dependensi transitif jsonwebtoken@0.4.0.'
+        expires: 2027-01-31T00:00:00.000Z
+  'npm:base64url:20180511':
+    - '*':
+        reason: 'Temuan ini berasal dari base64url@0.0.6 yang dibawa oleh jws@0.2.6 di bawah jsonwebtoken@0.4.0.'
+        expires: 2027-01-31T00:00:00.000Z
