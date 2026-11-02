@@ -240,6 +240,8 @@
       "minimatch": "3.1.5"
     },
     "lodash": "$lodash",
-    "moment": "$moment"
+    "moment": "$moment",
+    "basic-ftp": "6.2.1",
+    "decode-uri-component": "0.5.1"
   }
 }
